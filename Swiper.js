@@ -73,7 +73,7 @@ var Swiper = React.createClass({displayName: "Swiper",
       };
       this.props.onSwipe && this.props.onSwipe(evt);
       this.props[method] && this.props[method](evt);
-      e.preventDefault();
+      // e.preventDefault();
     }
     this._resetSwipe();
   },
@@ -86,7 +86,7 @@ var Swiper = React.createClass({displayName: "Swiper",
     var direction = this._getSwipeDirection(touch);
     if (this._isSwipeDirectionUnchanged(direction)) {
       this._updateSwipe(direction, touch);
-      e.preventDefault();
+      // e.preventDefault();
       return;
     }
     this._resetSwipe();
